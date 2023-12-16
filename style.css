@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #f8f9ff 0%, #C850C0 46%, #FFCC70 100%);
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    font-family: ubuntu;
+}
+
+.login{
+    background-color: white;
+    width: 300px;
+    /*height: 50%;*/
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 30px 15px;
+    text-align: center;
+    
+}
+
+.login h3{
+    margin: 0 0 8px;
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.login-form{
+    display: grid;
+    gap: 18px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.login .logo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.login .logo h2{
+    margin: o o 6px;
+}
+
+.login .logo i{
+    font-size: 40px;
+    color: chocolate;
+}
+
+.login-form > input, .login-form > button{
+    height: 37px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.login-form > input{
+    width: 250px;
+    background: transparent;
+    border: 2px;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.login-form > input:hover{
+    border: solid 2px chocolate;
+}
+
+.login-form > input:focus{
+    border: solid 2px #994D1C;
+}
+
+.login-form > button{
+    width: 80px;
+    border: none;
+    background-color: chocolate;
+    border-radius: 10px;
+    color: white;
+}

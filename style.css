@@ -89,9 +89,39 @@ body{
 }
 
 .login-form > button{
-    width: 80px;
+    width: 120px;
+    font-weight: 500;
+    font-size: 16px;
     border: none;
     background-color: chocolate;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-form > button:hover{
+    background-color: #994D1C;
+}
+
+.login-form a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-form a:hover{
+    color: #1976d2;
+}
+
+@media(width >= 500px){
+    body{
+        padding: 0;
+    }
+}
+
+@media(width >= 108opx){
+    .login{
+        width: 25%;
+    }
 }
